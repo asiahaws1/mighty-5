@@ -435,6 +435,11 @@ main h1 {
   color: black;
 }
 
+.swiper, .swiper img {
+  width: 100%;
+  height: auto;
+}
+
 #footerWrapper {
   background: #f4e7d4;
 }

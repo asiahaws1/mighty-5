@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
     <!-- fav icon stuff -->
@@ -44,43 +45,45 @@
         </nav>
     </div>
 
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+        
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="images/slider-small.jpg" media="(max-width:400px)">
+                      <source srcset="images/slider-medium.jpg" media="(max-width:800px)">
+                      <img src="images/slider-large.jpg" alt="sliderA" width="16" height="5">
+                    </picture>
+                  </div> <!-- end of one slide-->
+        
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="images/slider-small.jpg" media="(max-width:400px)">
+                      <source srcset="images/slider-medium.jpg" media="(max-width:800px)">
+                      <img src="images/slider2-large.jpg" alt="sliderA" width="16" height="5">
+                    </picture>
+                  </div> <!-- end of one slide-->
+        
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="images/slider-small.jpg" media="(max-width:400px)">
+                      <source srcset="images/slider-medium.jpg" media="(max-width:800px)">
+                      <img src="images/slider2-large.jpg" alt="sliderA" width="16" height="5">
+                    </picture>
+                  </div> <!-- end of one slide-->
+        
+        
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                  
+                </div>
+
     <div id="mainWrapper">
         <main>
-               <!-- Slider main container -->
-       <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="images/slider-small.jpg" media="(max-width:400px)">
-              <source srcset="images/slider-medium.jpg" media="(max-width:800px)">
-              <img src="images/slider-large.jpg" alt="sliderA" width="16" height="5">
-            </picture>
-          </div> <!-- end of one slide-->
-
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="images/slider2-small.jpg" media="(max-width:400px)">
-              <source srcset="images/slider2-medium.jpg" media="(max-width:800px)">
-              <img src="images/slider2-large.jpg" alt="sliderA" width="16" height="5">
-            </picture>
-          </div> <!-- end of one slide-->
-
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="images/slider2-small.jpg" media="(max-width:400px)">
-              <source srcset="images/slider2-medium.jpg" media="(max-width:800px)">
-              <img src="images/slider2-large.jpg" alt="sliderA" width="16" height="5">
-            </picture>
-          </div> <!-- end of one slide-->
-
-
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          
-        </div>
+    
             <h1>Parks</h1>
             <div class="allcards">
                 <section>
@@ -128,6 +131,50 @@
         </main>
     </div>
 
+     </div>
+            <h1>Parks</h1>
+            <div class="allcards">
+                <section>
+                    <h2>Arches</h2>
+                    <img src="images/sandwich.webp" alt="html" width="300" height="175">
+                    <p>Our sandwiches are made fresh daily, with an array of meats and options that are tasty and savory.</p>
+                    <a href="#">View Sandwiches</a>
+                </section>
+
+                <section>
+                    <h2>Bryce Canyon</h2>
+                    <img src="images/soup.webp" alt="html" width="300" height="175">
+                    <p>Our soups are warm and hearty, we offer noodles and vegetables in our soups, with crackers on the side.</p>
+                    <a href="#">View Soups</a>
+                </section>
+
+                <section>
+                    <h2>Canyonalnds</h2>
+                    <img src="images/salad.webp" alt="html" width="300" height="175">
+                    <p>We offer various salads, with different kinds of leafy greens. Add your choice of meat, toppings, and protein.</p>
+                    <a href="#">View Salads</a>
+                </section>
+
+                <section>
+                    <h2>Capitol Reef</h2>
+                    <img src="images/kids.webp" alt="html" width="300" height="175">
+                    <p>We have kids items for your tots aswell, complete with a kids drink, toy, and side!</p>
+                    <a href="#">View Kids Meals</a>
+                </section>
+
+                <section>
+                    <h2>Zion</h2>
+                    <img src="images/dessert.webp" alt="html" width="300" height="175">
+                    <p>Satisfy your Sweet Tooth, with our sweet decadent dessert options. Our desserts are a perfect way to end your meal.</p>
+                    <a href="#">View Desserts</a>
+                </section>
+                
+                
+
+
+            </div>
+
+
 <div id="footerWrapper">
     <footer>
         <div>
@@ -149,8 +196,8 @@
         <p class="legal">&copy; <span id="year">X</span> &bull; Mighty 5 </p>
     </footer>
 </div>
-<script src="js/scripts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
