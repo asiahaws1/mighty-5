@@ -46,6 +46,41 @@
 
     <div id="mainWrapper">
         <main>
+               <!-- Slider main container -->
+       <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/slider-small.jpg" media="(max-width:400px)">
+              <source srcset="images/slider-medium.jpg" media="(max-width:800px)">
+              <img src="images/slider-large.jpg" alt="sliderA" width="16" height="5">
+            </picture>
+          </div> <!-- end of one slide-->
+
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/slider2-small.jpg" media="(max-width:400px)">
+              <source srcset="images/slider2-medium.jpg" media="(max-width:800px)">
+              <img src="images/slider2-large.jpg" alt="sliderA" width="16" height="5">
+            </picture>
+          </div> <!-- end of one slide-->
+
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/slider2-small.jpg" media="(max-width:400px)">
+              <source srcset="images/slider2-medium.jpg" media="(max-width:800px)">
+              <img src="images/slider2-large.jpg" alt="sliderA" width="16" height="5">
+            </picture>
+          </div> <!-- end of one slide-->
+
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
+        </div>
             <h1>Parks</h1>
             <div class="allcards">
                 <section>
@@ -115,6 +150,7 @@
     </footer>
 </div>
 <script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
