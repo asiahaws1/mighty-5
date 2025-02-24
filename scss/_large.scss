@@ -15,9 +15,33 @@ header, nav, main, footer {
 
 footer div {
     display: grid;
-    grid-template-columns: auto auto auto;
-    
+    grid-template-columns: 1fr auto; // Left section takes full space, right section auto sizes
+    align-items: center;
+    padding: 10px 20px;
 }
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact a {
+    text-decoration: none; // Removes underline
+    color: inherit; // Uses the same color as the surrounding text
+}
+
+
+.contact p:first-child {
+    justify-self: start; // "UVU Digital Media" stays on the left
+}
+
+.contact p:last-child {
+    margin-left: auto; // Pushes "About" all the way to the right
+}
+
+
+
 
 nav {
     display:flex;
