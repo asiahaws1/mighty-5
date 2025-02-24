@@ -400,8 +400,7 @@ nav ul li a:hover {
   margin: 0;
   padding: 1rem 16px;
 }
-.allcards section h2 {
-  background-color: #edd4ae;
+.allcards section h3 {
   font-size: 1.5rem;
   margin: 0;
   padding: 1rem 16px;
@@ -504,13 +503,97 @@ footer p.legal {
     max-width: 1240px;
     margin: auto;
   }
+  nav {
+    display: flex;
+    justify-content: right;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    margin-left: 2vw;
+    border: none;
+    display: flex;
+  }
+  nav ul li {
+    border: none;
+  }
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    margin: 8px auto 0;
+  }
+  h3 {
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin-top: 5px;
+  }
   .allcards {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
   }
   .allcards section {
-    flex-basis: calc(33.333% - 10.6666666667px);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background: #f1f1f1;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+    gap: 20px;
+  }
+  .allcards section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .allcards section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .allcards section p {
+    font-size: 16px;
+    color: #333;
+  }
+  .allcards section a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #444;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: fit-content;
+  }
+  .allcards section a:hover {
+    background: #222;
   }
   footer div {
     display: grid;
@@ -532,20 +615,5 @@ footer p.legal {
   }
   .contact p:last-child {
     margin-left: auto;
-  }
-  nav {
-    display: flex;
-    justify-content: right;
-  }
-  nav button {
-    display: none;
-  }
-  nav ul, nav ul.open {
-    margin-left: 2vw;
-    border: none;
-    display: flex;
-  }
-  nav ul li {
-    border: none;
   }
 }
