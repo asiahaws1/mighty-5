@@ -6,17 +6,62 @@ header, nav, main, footer {
 
 //NAVIGATION SECTION
 
-nav {
-    display:flex;
-    justify-content: right;
-    button {display: none;}
-    ul, ul.open {
-        margin-left: 2vw;
-        border: none;
-        display: flex;
-    }// end ul
-    ul li {border: none;}
+#navWrapper {
+    background: black; // Sets the navbar background to black
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    width: 100%;
 }
+
+header h1 {
+    color: white; // Makes the title white
+    font-size: 36px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; // Pushes navigation all the way to the right
+    flex-grow: 1; // Ensures it moves as far right as possible
+
+}
+
+nav ul {
+    display: flex;
+    gap: 20px; // Adds spacing between navigation links
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; // Default text color is white
+    font-size: 24px;
+    padding: 10px 15px; // Adds padding for better spacing
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: white; // Changes background to white
+    color: black; // Changes text color to black
+}
+
+nav ul li.active a {
+    background: #D3D3D3; // Light gray background when active (like wireframe)
+    color: black;
+}
+
+
+nav button {
+    display: none; // Hides the hamburger menu on desktop
+}
+
 
 // Header Section
 
@@ -123,12 +168,17 @@ footer div {
     grid-template-columns: 1fr auto; 
     align-items: center;
     padding: 10px 20px;
+
+ 
 }
+
+
 
 .contact {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    color: white
 }
 
 .contact a {
