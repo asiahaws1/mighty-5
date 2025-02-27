@@ -20,10 +20,7 @@ body {
     color: $fontColor;
 }
 
-#headerWrapper {
-    background-color: #edd4ae;
-    color: #8F6593;
-}
+
 
 
 
@@ -39,6 +36,24 @@ header {
         font-weight: $normalWeight;
 
     }
+}
+
+header h1 {
+    color: white; 
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+header h1 a {
+    text-decoration: none; 
+    color: inherit; // Keeps the original text color
+    font-weight: inherit; 
+    display: inline-block; 
+}
+
+header h1 a:hover {
+    color: inherit; // Prevents color change on hover
 }
 
 
@@ -124,7 +139,7 @@ nav {
         
         a {
             display:block;
-            background-color: #8F6593;
+            background-color: #58B39E;
             padding: .75rem;
             text-align: center;
             margin: 18px;
@@ -162,41 +177,39 @@ main {
 }
 footer {
     padding: 0.5rem $gutter;
+
+    footer div {
+        display: grid;
+        grid-template-columns: 1fr auto; 
+        align-items: center;
+        padding: 10px 20px;
+    
+     
+    }
     
 
 
     section.contact{
         p {font-size: 1.2rem; margin: .5rem;}
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: .5rem;
+        }
+        
         
 
     }// end of contact
 
-
-    section.social{
-        display: flex;
-        justify-content: center;
-        a {
-            display: block;
-            border: solid 1px #666;
-            font-size: 2rem;
-            margin: .5rem;
-            padding: .5rem;
-            color: #8F6593;
-            &:hover {
-                background-color: #eadaeb;
-            }
-        }
-        
-    }// end of social
-
-
-    section.location{
-        font-size: 1.5rem;
-    }// end of location
-
-    p.legal {
-        margin: 0;
-        color:white;
-        text-align: center;
+    contact p:first-child {
+        justify-self: start; // "UVU Digital Media" stays on the left
     }
+    
+    .contact p:last-child {
+        margin-left: auto; // "About" all the way to the right
+    }
+
+
+   
 }
