@@ -3,6 +3,27 @@
     h1 {font-size: 2rem;}
 }
 
+
+h2 {
+    text-align: center; 
+    font-size: 32px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: block; // Ensures it takes up full width
+    width: 100%; // Makes sure it's centered across the entire page
+}
+
+h2::after {
+    content: ""; 
+    display: block;
+    width: 80px; // Adjust width of the underline
+    height: 3px; // Thickness of the underline
+    background-color: black; // Color of the underline
+    margin: 8px auto 0; // Centers underline below the text
+}
+
+
 .allcards {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +32,8 @@
     section{
         flex-basis: calc(50% - ($gutter/2))
     }
+
+    
 }
 
 footer div {
