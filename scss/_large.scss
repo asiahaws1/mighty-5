@@ -7,10 +7,6 @@ footer {
 }
 
 
-//NAVIGATION SECTION
-
-
-
 #titleBar {
     background: #9F4540;
     display: flex;
@@ -27,6 +23,7 @@ footer {
     }
 }
 
+//NAVIGATION SECTION
 
 #navWrapper {
     background: black;
@@ -196,37 +193,10 @@ h3::after {
 
 
 //FOOTER SECTION
-
-#footerWrapper {
-    background: #9F4540;
-}
-
-footer div {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 10px 20px;
-
-
-}
-
-.contact {
+.footer-content {
+    margin: 0 auto; 
+    padding:$gutter; 
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    color: white
-}
-
-.contact a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-.contact p:first-child {
-    justify-self: start; 
-}
-
-.contact p:last-child {
-    margin-left: auto;
+    width: calc(100% - ($gutter * 2)); 
 }

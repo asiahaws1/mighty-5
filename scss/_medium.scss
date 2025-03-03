@@ -36,9 +36,8 @@ h2::after {
     
 }
 
-footer div {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    
+.footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
