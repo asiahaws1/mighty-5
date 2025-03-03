@@ -72,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -173,7 +174,8 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  appearance: button;
+  -moz-appearance: button;
+       appearance: button;
 }
 
 /**
@@ -257,7 +259,8 @@ textarea {
  */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
-  appearance: textfield;
+  -moz-appearance: textfield;
+       appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -319,8 +322,6 @@ html {
 
 /*---- apply a natural box layout model to all elements -------*/
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -458,6 +459,7 @@ main h2::after {
 .swiper, .swiper img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 #footerWrapper {
@@ -529,9 +531,25 @@ footer .contact p:last-child {
   }
 }
 @media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     max-width: 1240px;
     margin: auto;
+  }
+  #titleBar {
+    background: #9F4540;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    width: 100%;
+  }
+  #titleBar h1 {
+    font-weight: 300;
+    color: white;
+    margin: 16px;
   }
   #navWrapper {
     background: black;
@@ -641,7 +659,8 @@ footer .contact p:last-child {
   .allcards section img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .allcards section h3 {
     font-size: 22px;
@@ -659,6 +678,7 @@ footer .contact p:last-child {
     color: white;
     padding: 10px 15px;
     text-decoration: none;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .allcards section a:hover {

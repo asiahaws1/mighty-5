@@ -1,4 +1,7 @@
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
     max-width: 1240px;
     margin: auto;
 }
@@ -6,8 +9,27 @@ header, nav, main, footer {
 
 //NAVIGATION SECTION
 
+
+
+#titleBar {
+    background: #9F4540;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    width: 100%;
+
+   h1 {
+    font-weight: $lightWeight;
+    color: white;
+    margin: $gutter;
+   
+    }
+}
+
+
 #navWrapper {
-    background: black; 
+    background: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,101 +38,101 @@ header, nav, main, footer {
 }
 
 header h1 {
-    color: white; 
+    color: white;
     font-size: 36px;
     margin: 0;
     padding: 10px 0;
 }
 
 header h1 a {
-    text-decoration: none; 
-    color: inherit; // Keeps the original text color
-    font-weight: inherit; 
-    display: inline-block; 
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    display: inline-block;
 }
 
 header h1 a:hover {
-    color: inherit; // Prevents color change on hover
+    color: inherit; 
 }
 
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end; // Pushes navigation all the way to the right
-    flex-grow: 1; // Ensures it moves as far right as possible
+    justify-content: flex-end; 
+    flex-grow: 1;
 
 }
 
 nav ul {
     display: flex;
-    gap: 0px; // Adds spacing between navigation links?
+    gap: 0px; 
     list-style: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white; // Default text color is white
+    color: white; 
     font-size: 24px;
-    padding: 10px 15px; // Adds padding for better spacing
+    padding: 10px 15px; 
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: white; 
+    background: white;
     color: black;
 }
 
 nav ul li.active a {
-    background: #58B39E; // Aqua color background when active (like wireframe)
+    background: #58B39E; 
     color: black;
 }
 
 
 nav button {
-    display: none; // Hides the hamburger menu on desktop
+    display: none; 
 }
 
 
 // Header Section
 
 h2 {
-    text-align: center; 
-    font-size: 32px; 
+    text-align: center;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
     position: relative;
-    display: block; // Ensures it takes up full width
-    width: 100%; // Makes sure it's centered across the entire page
+    display: block; 
+    width: 100%; 
 }
 
 h2::after {
-    content: ""; 
+    content: "";
     display: block;
-    width: 80px; // Adjust width of the underline
-    height: 3px; // Thickness of the underline
-    background-color: black; // Color of the underline
-    margin: 8px auto 0; // Centers underline below the text
+    width: 80px; 
+    height: 3px; 
+    background-color: black; 
+    margin: 8px auto 0; 
 }
 
 h3 {
     font-weight: bold;
-    display: inline-block; // Makes sure the width matches the text exactly
+    display: inline-block; 
     position: relative;
-    padding-bottom: 5px; // Creates space between text and underline
+    padding-bottom: 5px; 
     text-align: center;
 }
 
 h3::after {
-    content: ""; 
+    content: "";
     display: block;
-    width: 100%; // Matches exactly the width of the text
-    height: 3px; // Thickness of the underline
-    background-color: black; // Adjust color as needed
-    margin-top: 5px; // Space between text and underline
+    width: 100%; 
+    height: 3px; 
+    background-color: black; 
+    margin-top: 5px; 
 }
 
 
@@ -120,36 +142,36 @@ h3::after {
 
 .allcards {
     display: flex;
-    flex-direction: column; // Stack the sections vertically
+    flex-direction: column; 
     align-items: center;
-    gap: 20px; // Adds spacing between each park section
+    gap: 20px; 
     padding: 20px;
-    max-width: 900px; // Controls the max width for consistency
+    max-width: 900px; 
     margin: 0 auto;
 }
 
 .allcards section {
     display: grid;
-    grid-template-columns: 2fr 2fr; // Image takes 1/3, text takes 2/3
+    grid-template-columns: 2fr 2fr; 
     align-items: center;
-    background: #f1f1f1; // Light gray background
+    background: #f1f1f1; 
     width: 100%;
     overflow: hidden;
     padding: 15px;
-    gap: 20px; // Spacing between image and text
+    gap: 20px; 
 }
 
 .allcards section img {
     width: 100%;
     height: auto;
-    object-fit: cover; // Ensures the image fills the space
+    object-fit: cover; 
 }
 
 .allcards section h3 {
     font-size: 22px;
     margin-bottom: 10px;
     text-align: left;
-    
+
 }
 
 .allcards section p {
@@ -181,11 +203,11 @@ h3::after {
 
 footer div {
     display: grid;
-    grid-template-columns: 1fr auto; 
+    grid-template-columns: 1fr auto;
     align-items: center;
     padding: 10px 20px;
 
- 
+
 }
 
 .contact {
@@ -196,15 +218,15 @@ footer div {
 }
 
 .contact a {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
 }
 
 
 .contact p:first-child {
-    justify-self: start; // "UVU Digital Media" stays on the left
+    justify-self: start; 
 }
 
 .contact p:last-child {
-    margin-left: auto; // "About" all the way to the right
+    margin-left: auto;
 }
