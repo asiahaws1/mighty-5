@@ -334,20 +334,20 @@ body {
 header {
   display: flex;
   align-items: center;
-  padding: 1rem 16px;
+  padding: 16px;
   gap: 8px;
 }
 header h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 16px;
   font-weight: 500;
 }
 
 header h1 {
   color: white;
   margin: 0;
-  padding: 10px 0;
-  font-size: 1.5rem;
+  padding: 0;
+  font-size: 16px;
 }
 
 header h1 a {
@@ -362,33 +362,55 @@ header h1 a:hover {
 }
 
 #navWrapper {
-  background-color: black;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
 nav button {
-  padding: 0.5rem;
-  background: transparent;
+  display: block;
+  background: none;
   border: none;
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
 }
 nav ul {
   display: none;
-  margin: 0;
+  flex-direction: column;
+  background: black;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
   padding: 0;
-  text-align: left;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }
 nav ul.open {
-  display: block;
+  display: flex;
 }
 nav ul li {
-  list-style-type: none;
+  width: 100%;
+  padding: 10px 0;
 }
 nav ul li a {
-  display: block;
-  font-weight: 300;
-  padding: 0.9rem 2vw;
+  color: white;
   text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
 }
 nav ul li.active a {
   background-color: white;
@@ -482,10 +504,10 @@ main h2::after {
 
 @media only screen and (min-width: 35rem) {
   #headerWrapper {
-    padding: 2rem 16px;
+    padding: 16px;
   }
   #headerWrapper h1 {
-    font-size: 2rem;
+    font-size: 36px;
   }
   h2 {
     text-align: center;
@@ -543,14 +565,13 @@ main h2::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: 16px;
     width: 100%;
   }
   header h1 {
     color: white;
     font-size: 36px;
     margin: 0;
-    padding: 16px;
   }
   header h1 a {
     text-decoration: none;

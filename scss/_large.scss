@@ -29,15 +29,16 @@ main, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding:$gutter;
     width: 100%;
 }
+
+
 
 header h1 {
     color: white;
     font-size: 36px;
     margin: 0;
-    padding: $gutter;
 }
 
 header h1 a {

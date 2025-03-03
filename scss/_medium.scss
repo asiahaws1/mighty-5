@@ -1,6 +1,6 @@
 #headerWrapper {
-    padding: 2rem $gutter;
-    h1 {font-size: 2rem;}
+    padding: $gutter;
+    h1 {font-size: 36px;}
 }
 
 
@@ -10,8 +10,8 @@ h2 {
     font-weight: bold;
     margin-bottom: 20px;
     position: relative;
-    display: block; // Ensures it takes up full width
-    width: 100%; // Makes sure it's centered across the entire page
+    display: block;
+    width: 100%; 
 }
 
 h2::after {

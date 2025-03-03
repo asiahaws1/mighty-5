@@ -34,8 +34,4 @@ const swiper = new Swiper('.swiper', {
 
   //nav 
 
-  const hb = document.querySelector('#hamburgerBtn');
 
-  hb.addEventListener('click', () => {
-    document.querySelector('#primaryNav').classList.toggle('open');
-  })
