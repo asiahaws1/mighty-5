@@ -521,8 +521,7 @@ main h2::after {
 @media only screen and (min-width: 60rem) {
   header,
   nav,
-  main,
-  footer {
+  main, footer {
     max-width: 1240px;
     margin: auto;
   }
@@ -551,7 +550,7 @@ main h2::after {
     color: white;
     font-size: 36px;
     margin: 0;
-    padding: 10px 0;
+    padding: 16px;
   }
   header h1 a {
     text-decoration: none;
@@ -570,7 +569,7 @@ main h2::after {
   }
   nav ul {
     display: flex;
-    gap: 0px;
+    gap: 16px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -671,10 +670,12 @@ main h2::after {
     background: #9F4540;
   }
   .footer-content {
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 15px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: calc(100% - 32px);
   }
 }

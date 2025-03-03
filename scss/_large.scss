@@ -1,7 +1,6 @@
 header,
 nav,
-main,
-footer {
+main, footer {
     max-width: 1240px;
     margin: auto;
 }
@@ -38,7 +37,7 @@ header h1 {
     color: white;
     font-size: 36px;
     margin: 0;
-    padding: 10px 0;
+    padding: $gutter;
 }
 
 header h1 a {
@@ -63,7 +62,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 0px; 
+    gap: $gutter; 
     list-style: none;
     padding: 0;
     margin: 0;
@@ -194,9 +193,12 @@ h3::after {
 
 //FOOTER SECTION
 .footer-content {
+    max-width: 1400px; //keeps $gutter from being added to the width
     margin: 0 auto; 
-    padding:$gutter; 
+    padding: 15px $gutter; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
     width: calc(100% - ($gutter * 2)); 
 }
+
