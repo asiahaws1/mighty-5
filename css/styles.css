@@ -413,7 +413,7 @@ nav ul li a {
   padding: 10px;
 }
 nav ul li.active a {
-  background-color: white;
+  background-color: #58B39E;
 }
 nav ul li a:hover {
   background-color: gray;
@@ -561,57 +561,38 @@ main h2::after {
     margin: 16px;
   }
   #navWrapper {
-    background: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px;
     width: 100%;
   }
-  header h1 {
-    color: white;
-    font-size: 36px;
-    margin: 0;
-  }
-  header h1 a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: inherit;
-    display: inline-block;
-  }
-  header h1 a:hover {
-    color: inherit;
+  nav button {
+    display: none;
   }
   nav {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     flex-grow: 1;
   }
   nav ul {
     display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
     gap: 16px;
-    list-style: none;
+  }
+  nav ul li {
+    width: auto;
     padding: 0;
-    margin: 0;
   }
   nav ul li a {
-    text-decoration: none;
-    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  header h1 a {
     font-size: 24px;
-    padding: 10px 15px;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  nav ul li a:hover {
-    background: white;
-    color: black;
-  }
-  nav ul li.active a {
-    background: #58B39E;
-    color: black;
-  }
-  nav button {
-    display: none;
   }
   h2 {
     text-align: center;

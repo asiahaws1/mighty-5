@@ -68,25 +68,23 @@ header h1 a:hover {
 
 
 nav {
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-grow: 1;
 
     button {
-        display: block;
+        display: block; 
         background: none;
         border: none;
         font-size: 32px;
         color: white;
         cursor: pointer;
         padding: 10px;
-    }// end button
-
+    }
 
     ul {
-        display: none; // Initially hidden on mobile
+        display: none; // Hide menu by default
         flex-direction: column;
         background: black;
         width: 100%;
@@ -106,9 +104,7 @@ nav {
     ul li {
         width: 100%;
         padding: 10px 0;
-        
-      }
-
+    }
 
     ul li a {
         color: white;
@@ -116,14 +112,17 @@ nav {
         font-size: 18px;
         display: block;
         padding: 10px;
-        
     }
 
-    ul li.active a {background-color: white;}
+    ul li.active a {
+        background-color: #58B39E;
+    }
 
-    ul li a:hover{background-color: gray;}
+    ul li a:hover {
+        background-color: gray;
+    }
+}
 
-}// end nav
 
 
   

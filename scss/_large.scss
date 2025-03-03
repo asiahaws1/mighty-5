@@ -24,75 +24,46 @@ main, footer {
 
 //NAVIGATION SECTION
 
-#navWrapper {
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:$gutter;
-    width: 100%;
-}
+    #navWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $gutter;
+        width: 100%;
+    }
 
+    nav button {
+        display: none; 
+    }
 
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
 
-header h1 {
-    color: white;
-    font-size: 36px;
-    margin: 0;
-}
+        ul {
+            display: flex; 
+            flex-direction: row;
+            position: static;
+            width: auto;
+            gap: $gutter;
+        }
 
-header h1 a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: inherit;
-    display: inline-block;
-}
+        ul li {
+            width: auto;
+            padding: 0;
+        }
 
-header h1 a:hover {
-    color: inherit; 
-}
+        ul li a {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
 
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; 
-    flex-grow: 1;
-
-}
-
-nav ul {
-    display: flex;
-    gap: $gutter; 
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white; 
+header h1 a{
     font-size: 24px;
-    padding: 10px 15px; 
-    transition: background 0.3s ease, color 0.3s ease;
 }
-
-nav ul li a:hover {
-    background: white;
-    color: black;
-}
-
-nav ul li.active a {
-    background: #58B39E; 
-    color: black;
-}
-
-
-nav button {
-    display: none; 
-}
-
 
 // Header Section
 
