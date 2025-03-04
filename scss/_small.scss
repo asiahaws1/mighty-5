@@ -76,6 +76,8 @@ header h1 a:hover {
     justify-content: space-between;
     padding: $gutter;
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -95,7 +97,7 @@ nav {
         padding: 10px;
     }
 
-    ul {
+     ul {
         display: none; 
         flex-direction: column;
         background: black;
@@ -107,12 +109,12 @@ nav {
         margin: 0;
         list-style: none;
         text-align: center;
+        z-index: 20;
     }
-
+    
     ul.open {
         display: flex;
     }
-
     ul li {
         width: 100%;
         padding: 10px 0;
@@ -220,7 +222,8 @@ main {
 .swiper, .swiper img {
     width: 100%;
     height: auto;
-   display:block;
+    display: block;
+    z-index: 1;
 }
 
 

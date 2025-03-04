@@ -383,6 +383,8 @@ header h1 a:hover {
   justify-content: space-between;
   padding: 16px;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 nav {
@@ -412,6 +414,7 @@ nav ul {
   margin: 0;
   list-style: none;
   text-align: center;
+  z-index: 20;
 }
 nav ul.open {
   display: flex;
@@ -501,6 +504,7 @@ main h2::after {
   width: 100%;
   height: auto;
   display: block;
+  z-index: 1;
 }
 
 #footerWrapper {
