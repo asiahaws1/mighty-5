@@ -21,7 +21,19 @@ body {
 }
 
 
-
+#titleBar {
+    background: #9F4540;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    width: 100%;
+  }
+  #titleBar h1 {
+    font-weight: 300;
+    color: white;
+    margin: 16px;
+  }
 
 
 header {
@@ -84,7 +96,7 @@ nav {
     }
 
     ul {
-        display: none; // Hide menu by default
+        display: none; 
         flex-direction: column;
         background: black;
         width: 100%;
@@ -180,20 +192,26 @@ main {
     h2 {
         text-align: center; 
         font-size: 32px; 
-        font-weight: bold;
+        font-weight: $lightWeight;
         margin-bottom: 20px;
         position: relative;
-        display: block; // Ensures it takes up full width
-        width: 100%; // Makes sure it's centered across the entire page
+        display: block; 
+        width: 100%; 
+    } 
+
+    p {
+        text-align: center;
+        font-weight: $lightWeight;
+        padding: $gutter;
     }
     
     h2::after {
         content: ""; 
         display: block;
-        width: 80px; // Adjust width of the underline
-        height: 3px; // Thickness of the underline
-        background-color: black; // Color of the underline
-        margin: 8px auto 0; // Centers underline below the text
+        width: 80px; 
+        height: 3px; 
+        background-color: black; 
+        margin: 8px auto 0; 
     }
 } //main
 

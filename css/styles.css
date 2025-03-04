@@ -331,6 +331,21 @@ body {
   color: #333;
 }
 
+#titleBar {
+  background: #9F4540;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  width: 100%;
+}
+
+#titleBar h1 {
+  font-weight: 300;
+  color: white;
+  margin: 16px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -462,11 +477,16 @@ main h1 {
 main h2 {
   text-align: center;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 20px;
   position: relative;
   display: block;
   width: 100%;
+}
+main p {
+  text-align: center;
+  font-weight: 300;
+  padding: 16px;
 }
 main h2::after {
   content: "";
