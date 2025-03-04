@@ -15,7 +15,7 @@ x.onclick = toggleMenu;
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-    effect: 'flip',
+    effect: 'slide',
     speed: 2000,
   
     // If we need pagination
