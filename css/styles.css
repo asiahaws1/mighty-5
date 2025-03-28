@@ -358,6 +358,17 @@ header h1 {
   font-weight: 500;
 }
 
+#aboutButton {
+  display: block;
+  background-color: #3A7E6E;
+  padding: 0.75rem;
+  text-align: center;
+  margin: 18px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
 header h1 {
   color: white;
   margin: 0;
@@ -431,7 +442,7 @@ nav ul li a {
   padding: 10px;
 }
 nav ul li.active a {
-  background-color: #58B39E;
+  background-color: #3A7E6E;
 }
 nav ul li a:hover {
   background-color: gray;
@@ -498,7 +509,7 @@ main h2 {
 main h2::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 250px;
   height: 3px;
   background-color: black;
   margin: 8px 0 0;
@@ -654,6 +665,17 @@ main h3::after {
     background-color: black;
     margin: 8px 0 0;
   }
+  #aboutButton {
+    display: inline-block;
+    position: relative;
+    background: #3A7E6E;
+    color: white;
+    text-decoration: none;
+    width: max-content;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 0;
+  }
   h3 {
     font-weight: 300;
     display: inline-flex;
@@ -707,7 +729,7 @@ main h3::after {
   .allcards section a {
     display: inline-block;
     margin-top: auto;
-    background: #58B39E;
+    background: #3A7E6E;
     color: white;
     padding: 10px 15px;
     text-decoration: none;

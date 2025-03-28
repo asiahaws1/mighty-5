@@ -50,6 +50,17 @@ header {
     }
 }
 
+#aboutButton {
+    display:block;
+    background-color: #3A7E6E;
+    padding: .75rem;
+    text-align: center;
+    margin: 18px;
+    border-radius: 8px;
+    color:white;
+    text-decoration: none;
+}
+
 header h1 {
     color: white; 
     margin: 0;
@@ -129,7 +140,7 @@ nav {
     }
 
     ul li.active a {
-        background-color: #58B39E;
+        background-color: #3A7E6E;
     }
 
     ul li a:hover {
@@ -213,7 +224,7 @@ main {
     h2::after {
         content: "";
         display: block;
-        width: 80px;
+        width: 250px;
         height: 3px;
         background-color: black;
         margin: 8px 0 0; 
