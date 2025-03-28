@@ -360,7 +360,7 @@ header h1 {
 
 #aboutButton {
   display: block;
-  background-color: #3A7E6E;
+  background-color: #9F4540;
   padding: 0.75rem;
   text-align: center;
   margin: 18px;
@@ -668,7 +668,7 @@ main h3::after {
   #aboutButton {
     display: inline-block;
     position: relative;
-    background: #3A7E6E;
+    background: #9F4540;
     color: white;
     text-decoration: none;
     width: max-content;
