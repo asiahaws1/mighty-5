@@ -50,16 +50,7 @@ header {
     }
 }
 
-#aboutButton {
-    display:block;
-    background-color: #9F4540;
-    padding: .75rem;
-    text-align: center;
-    margin: 18px;
-    border-radius: 8px;
-    color:white;
-    text-decoration: none;
-}
+
 
 header h1 {
     color: white; 
@@ -204,7 +195,6 @@ main {
     p {
         text-align: left;
         font-weight: $lightWeight;
-        padding: $gutter;
         margin: $gutter;
         line-height: 1.5;
     }
@@ -214,8 +204,7 @@ main {
         font-size: 32px;
         font-weight: $lightWeight;
         margin-bottom: 20px;
-        margin-left: $gutter; 
-        padding: $gutter;
+        margin-left: $gutter;
         position: relative;
         display: block;
         width: calc(100% - 16px);
@@ -224,10 +213,10 @@ main {
     h2::after {
         content: "";
         display: block;
-        width: 250px;
+        width: 80px;
         height: 3px;
         background-color: black;
-        margin: 8px 0 0; 
+        
     }
     
 
@@ -246,6 +235,17 @@ main {
         height: 3px; 
         background-color: black; 
         margin-top: 5px; 
+    }
+
+    #aboutButton {
+        display:block;
+        background-color: #3A7E6E;
+        padding: .75rem;
+        text-align: center;
+        margin: 18px;
+        border-radius: 8px;
+        color:white;
+        text-decoration: none;
     }
 } //main
 
