@@ -23,6 +23,25 @@ h2::after {
     margin: 8px auto 0; // Centers underline below the text
 }
 
+#aboutTitle {
+    text-align: left; 
+    font-size: 32px;
+    font-weight: $lightWeight;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    margin-left: $gutter;
+}
+
+#aboutTitle::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: black;
+    margin: 8px 0 0; 
+}
+
 
 .allcards {
     display: flex;

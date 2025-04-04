@@ -464,7 +464,7 @@ nav ul li a:hover {
 }
 .allcards section a {
   display: block;
-  background-color: #58B39E;
+  background-color: #3A7E6E;
   padding: 0.75rem;
   text-align: center;
   margin: 18px;
@@ -525,6 +525,23 @@ main #aboutButton {
   color: white;
   text-decoration: none;
 }
+main #aboutTitle {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  margin-left: 16px;
+}
+main #aboutTitle::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 3px;
+  background-color: black;
+  margin: 8px 0 0;
+}
 
 .swiper, .swiper img {
   width: 100%;
@@ -575,6 +592,23 @@ main #aboutButton {
     height: 3px;
     background-color: black;
     margin: 8px auto 0;
+  }
+  #aboutTitle {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    margin-left: 16px;
+  }
+  #aboutTitle::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: black;
+    margin: 8px 0 0;
   }
   .allcards {
     display: flex;

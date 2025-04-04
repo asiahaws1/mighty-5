@@ -170,7 +170,7 @@ nav {
         
         a {
             display:block;
-            background-color: #58B39E;
+            background-color: #3A7E6E;
             padding: .75rem;
             text-align: center;
             margin: 18px;
@@ -246,6 +246,25 @@ main {
         border-radius: 8px;
         color:white;
         text-decoration: none;
+    }
+
+    #aboutTitle {
+        text-align: left; 
+        font-size: 32px;
+        font-weight: $lightWeight;
+        margin-bottom: 20px;
+        position: relative;
+        display: block;
+        margin-left: $gutter;
+    }
+    
+    #aboutTitle::after {
+        content: "";
+        display: block;
+        width: 250px;
+        height: 3px;
+        background-color: black;
+        margin: 8px 0 0; 
     }
 } //main
 
