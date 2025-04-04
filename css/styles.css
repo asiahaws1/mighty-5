@@ -542,6 +542,15 @@ main #aboutTitle::after {
   background-color: black;
   margin: 8px 0 0;
 }
+main #logosContributors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+  margin: 0 16px;
+  padding: 16px;
+  margin-bottom: 4rem;
+}
 
 .swiper, .swiper img {
   width: 100%;
@@ -722,6 +731,15 @@ main #aboutTitle::after {
     text-align: left;
     margin-left: 30px;
     margin-top: 0;
+  }
+  #logosContributors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+    margin: 0 16px;
+    padding: 16px;
+    margin-bottom: 4rem;
   }
   h3 {
     font-weight: 300;

@@ -266,6 +266,16 @@ main {
         background-color: black;
         margin: 8px 0 0; 
     }
+
+    #logosContributors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8rem;
+        margin: 0 $gutter;
+        padding: $gutter;
+        margin-bottom: 4rem;
+    }
 } //main
 
 // swiper
