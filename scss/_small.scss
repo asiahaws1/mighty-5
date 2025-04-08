@@ -50,6 +50,8 @@ header {
     }
 }
 
+
+
 header h1 {
     color: white; 
     margin: 0;
@@ -129,7 +131,7 @@ nav {
     }
 
     ul li.active a {
-        background-color: #58B39E;
+        background-color: #3A7E6E;
     }
 
     ul li a:hover {
@@ -168,7 +170,7 @@ nav {
         
         a {
             display:block;
-            background-color: #58B39E;
+            background-color: #3A7E6E;
             padding: .75rem;
             text-align: center;
             margin: 18px;
@@ -193,7 +195,6 @@ main {
     p {
         text-align: left;
         font-weight: $lightWeight;
-        padding: $gutter;
         margin: $gutter;
         line-height: 1.5;
     }
@@ -203,8 +204,7 @@ main {
         font-size: 32px;
         font-weight: $lightWeight;
         margin-bottom: 20px;
-        margin-left: $gutter; 
-        padding: $gutter;
+        margin-left: $gutter;
         position: relative;
         display: block;
         width: calc(100% - 16px);
@@ -216,7 +216,7 @@ main {
         width: 80px;
         height: 3px;
         background-color: black;
-        margin: 8px 0 0; 
+        
     }
     
 
@@ -235,6 +235,46 @@ main {
         height: 3px; 
         background-color: black; 
         margin-top: 5px; 
+    }
+
+    #aboutButton {
+        display:block;
+        background-color: #3A7E6E;
+        padding: .75rem;
+        text-align: center;
+        margin: 18px;
+        border-radius: 8px;
+        color:white;
+        text-decoration: none;
+    }
+
+    #aboutTitle {
+        text-align: left; 
+        font-size: 32px;
+        font-weight: $lightWeight;
+        margin-bottom: 20px;
+        position: relative;
+        display: block;
+        margin-left: $gutter;
+    }
+    
+    #aboutTitle::after {
+        content: "";
+        display: block;
+        width: 250px;
+        height: 3px;
+        background-color: black;
+        margin: 8px 0 0; 
+    }
+
+    #logosContributors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8rem;
+        margin: 0 $gutter;
+        padding: $gutter;
+        margin-bottom: 4rem;
     }
 } //main
 

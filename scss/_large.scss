@@ -76,6 +76,7 @@ h2 {
     display: block;
 }
 
+
 h2::after {
     content: "";
     display: block;
@@ -83,6 +84,48 @@ h2::after {
     height: 3px;
     background-color: black;
     margin: 8px 0 0; 
+}
+
+#aboutTitle {
+    text-align: left; 
+    font-size: 32px;
+    font-weight: $lightWeight;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    margin-left: $gutter;
+}
+
+#aboutTitle::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: black;
+    margin: 8px 0 0; 
+}
+
+#aboutButton {
+    display: inline-block;
+    position: relative;
+    background: #3A7E6E;
+    color: white;
+    text-decoration: none;
+    width: max-content; 
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 0;
+   
+}
+
+#logosContributors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+    margin: 0 $gutter;
+    padding: $gutter;
+    margin-bottom: 4rem;
 }
 
 h3 {
@@ -147,7 +190,7 @@ h3 {
 .allcards section a {
     display: inline-block;
     margin-top: auto; // Ensures button stays at the bottom of the card
-    background: #58B39E;
+    background: #3A7E6E;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
