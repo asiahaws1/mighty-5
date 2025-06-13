@@ -757,54 +757,50 @@ main #logosContributors {
   .allcards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
     max-width: 1240px;
     margin: 0 auto;
+    padding: 0;
   }
   .allcards section {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    align-items: stretch;
-    background: #f1f1f1;
-    width: 100%;
-    overflow: hidden;
-    padding: 20px;
-    gap: 20px;
-    min-height: 350px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0;
+    background: none;
+    border: none;
   }
   .allcards section img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
   }
-  .allcards section .card-text {
+  .card-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    padding-right: 16px;
+    padding-bottom: 16px;
   }
-  .allcards section h3 {
+  .card-text h3 {
     font-size: 22px;
-    margin-bottom: 10px;
-    text-align: left;
+    font-weight: bold;
+    margin: 0 0 4px 0;
   }
-  .allcards section p {
+  .card-text p {
     font-size: 16px;
-    color: #333;
+    margin: 0;
+    line-height: 1.4;
     flex-grow: 1;
   }
-  .allcards section a {
-    display: inline-block;
-    margin-top: auto;
+  .card-text a {
+    align-self: start;
     background: #3A7E6E;
     color: white;
-    padding: 10px 15px;
     text-decoration: none;
-    width: fit-content;
+    font-weight: 500;
   }
-  .allcards section a:hover {
+  .card-text a:hover {
     background: #9F4540;
   }
   .footer-content {
@@ -812,8 +808,9 @@ main #logosContributors {
     margin: 0 auto;
     padding: 15px 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: calc(100% - 32px);
+    text-align: center;
+    gap: 2rem;
   }
 }
