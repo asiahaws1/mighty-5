@@ -248,7 +248,7 @@ main {
         text-decoration: none;
     }
 
-    #aboutTitle {
+    #missionEstatement {
         text-align: left; 
         font-size: 32px;
         font-weight: $lightWeight;
@@ -258,10 +258,29 @@ main {
         margin-left: $gutter;
     }
     
-    #aboutTitle::after {
+    #missionEstatement::after {
         content: "";
         display: block;
-        width: 250px;
+        width: 265px;
+        height: 3px;
+        background-color: black;
+        margin: 8px 0 0; 
+    }
+
+    #contributors {
+        text-align: left; 
+        font-size: 32px;
+        font-weight: $lightWeight;
+        margin-bottom: 20px;
+        position: relative;
+        display: block;
+        margin-left: $gutter;
+    }
+    
+    #contributors::after {
+        content: "";
+        display: block;
+        width: 175px;
         height: 3px;
         background-color: black;
         margin: 8px 0 0; 

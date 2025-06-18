@@ -525,7 +525,7 @@ main #aboutButton {
   color: white;
   text-decoration: none;
 }
-main #aboutTitle {
+main #missionEstatement {
   text-align: left;
   font-size: 32px;
   font-weight: 300;
@@ -534,10 +534,27 @@ main #aboutTitle {
   display: block;
   margin-left: 16px;
 }
-main #aboutTitle::after {
+main #missionEstatement::after {
   content: "";
   display: block;
-  width: 250px;
+  width: 265px;
+  height: 3px;
+  background-color: black;
+  margin: 8px 0 0;
+}
+main #contributors {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  margin-left: 16px;
+}
+main #contributors::after {
+  content: "";
+  display: block;
+  width: 175px;
   height: 3px;
   background-color: black;
   margin: 8px 0 0;
