@@ -180,9 +180,9 @@ h3 {
   
   .card-text p {
     font-size: 16px;
-    margin: 0; // no extra space below paragraph
-    line-height: 1.4; // optional for better readability
-    flex-grow: 1; // allows p to take vertical space before pushing button down
+    margin: 0; 
+    line-height: 1.4; 
+    flex-grow: 1; 
   }
   
   .card-text a {
