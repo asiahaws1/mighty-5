@@ -2,62 +2,132 @@
     padding: $gutter;
     h1 {font-size: 36px;}
 }
-
-
-h2 {
-    text-align: center; 
-    font-size: 32px; 
-    font-weight: bold;
+  
+  h2 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: $lightWeight;
     margin-bottom: 20px;
     position: relative;
     display: block;
-    width: 100%; 
-}
-
-h2::after {
-    content: ""; 
+  }
+  
+  h2::after {
+    content: "";
     display: block;
-    width: 80px; // Adjust width of the underline
-    height: 3px; // Thickness of the underline
-    background-color: black; // Color of the underline
-    margin: 8px auto 0; // Centers underline below the text
-}
-
-#aboutTitle {
-    text-align: left; 
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    margin: 8px 0 0;
+  }
+  
+  #aboutTitle {
+    text-align: left;
     font-size: 32px;
     font-weight: $lightWeight;
     margin-bottom: 20px;
     position: relative;
     display: block;
     margin-left: $gutter;
-}
-
-#aboutTitle::after {
+  }
+  
+  #aboutTitle::after {
     content: "";
     display: block;
     width: 250px;
     height: 3px;
     background-color: black;
-    margin: 8px 0 0; 
-}
-
-
-.allcards {
+    margin: 8px 0 0;
+  }
+  
+  #aboutButton {
+    display: inline-block;
+    position: relative;
+    background: #3A7E6E;
+    color: white;
+    text-decoration: none;
+    width: max-content;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  
+  // Card Section
+  .allcards {
     display: flex;
-    flex-wrap: wrap;
-    gap: $gutter;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: 0;
+    padding: 0;
 
-    section{
-        flex-basis: calc(50% - ($gutter/2))
+  
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 0;
+      background: none; 
+      border: none;
+
+   
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .card-text {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: $gutter;
+    padding-bottom: $gutter;
+  
+        
+  
+        p {
+          font-size: 16px;
+          margin: 0;
+          line-height: 1.4;
+          flex-grow: 1;
+        }
+  
+        a {
+          align-self: start;
+          background: #3A7E6E;
+          color: white;
+          text-decoration: none;
+          font-weight: 500;
+  
+          &:hover {
+            background: #9F4540;
+          }
+        }
+  
+      }
     }
+  }
 
-    
+  
+  
+  h3 {
+    font-weight: $boldWeight;
+    display: inline-flex; 
+    position: relative;
+    padding-bottom: 2px; 
+    text-align: left;
+    width: max-content; 
+    margin: 0; 
 }
-
-.footer-content {
+  
+  
+  // Footer Section
+  .footer-content {
     flex-direction: row;
     justify-content: space-between;
     padding: $gutter;
     margin: $gutter;
-}
+  }
+ 
