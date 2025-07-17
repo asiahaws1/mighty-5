@@ -571,13 +571,33 @@ main #logosContributors {
 
 .swiper {
   width: 100%;
-  height: 60vh;
+  height: 250px;
 }
 
-.swiper img {
+@media (max-width: 400px) {
+  .swiper {
+    height: 200px;
+  }
+}
+@media (min-width: 401px) and (max-width: 768px) {
+  .swiper {
+    height: 300px;
+  }
+}
+@media (min-width: 769px) {
+  .swiper {
+    height: 400px;
+  }
+}
+.swiper-slide {
+  height: 100%;
+}
+
+.swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 #footerWrapper {
@@ -953,6 +973,9 @@ main #logosContributors {
     width: 16px;
     height: 16px;
     object-fit: contain;
+  }
+  .swiper {
+    height: 500px;
   }
   .footer-content {
     max-width: 1400px;

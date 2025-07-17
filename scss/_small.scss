@@ -304,16 +304,38 @@ main {
 // swiper
 
 .swiper {
-    width: 100%;
-    height: 60vh; 
+  width: 100%;
+  height: 250px;
 }
 
-.swiper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media (max-width: 400px) {
+  .swiper {
+    height: 200px;
+  }
 }
 
+@media (min-width: 401px) and (max-width: 768px) {
+  .swiper {
+    height: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  .swiper {
+    height: 400px;
+  }
+}
+
+.swiper-slide {
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 
 // begin the footer
