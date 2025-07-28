@@ -380,3 +380,8 @@ main {
     }
   }
   
+
+  *::after {
+  display: none !important;
+  content: none !important;
+}

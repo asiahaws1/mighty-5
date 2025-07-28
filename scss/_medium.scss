@@ -5,6 +5,11 @@
   }
 }
 
+*::after {
+  display: none !important;
+  content: none !important;
+}
+
 
 
 #headerWrapper {
@@ -21,15 +26,7 @@
     display: block;
   }
   
-  h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: black;
-    margin: 8px 0 0;
-  }
-  
+
   #aboutTitle {
     text-align: left;
     font-size: 32px;

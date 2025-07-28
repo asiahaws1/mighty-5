@@ -637,6 +637,11 @@ main #logosContributors {
   margin-left: 16px;
 }
 
+*::after {
+  display: none !important;
+  content: none !important;
+}
+
 @media only screen and (min-width: 35rem) and (min-width: 768px) and (max-width: 1024px) {
   .allcards {
     max-width: 100%;
@@ -644,6 +649,10 @@ main #logosContributors {
   }
 }
 @media only screen and (min-width: 35rem) {
+  *::after {
+    display: none !important;
+    content: none !important;
+  }
   #headerWrapper {
     padding: 16px;
   }
@@ -657,14 +666,6 @@ main #logosContributors {
     margin-bottom: 20px;
     position: relative;
     display: block;
-  }
-  h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: black;
-    margin: 8px 0 0;
   }
   #aboutTitle {
     text-align: left;
@@ -761,6 +762,10 @@ main #logosContributors {
     max-width: 1240px;
     margin: auto;
   }
+  *::after {
+    display: none !important;
+    content: none !important;
+  }
   #titleBar {
     background: #9F4540;
     display: flex;
@@ -815,14 +820,6 @@ main #logosContributors {
     margin-bottom: 20px;
     position: relative;
     display: block;
-  }
-  h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: black;
-    margin: 8px 0 0;
   }
   #aboutTitle {
     text-align: left;
