@@ -5,10 +5,6 @@ main, footer {
     margin: auto;
 }
 
-*::after {
-  display: none !important;
-  content: none !important;
-}
 
 
 #titleBar {
@@ -35,7 +31,9 @@ main, footer {
         justify-content: space-between;
         padding: $gutter;
         width: 100%;
-      
+        position: sticky;
+        top: 0;
+     
         
 
 
@@ -98,14 +96,6 @@ h2 {
     margin-left: $gutter;
 }
 
-#aboutTitle::after {
-    content: "";
-    display: block;
-    width: 250px;
-    height: 3px;
-    background-color: black;
-    margin: 8px 0 0; 
-}
 
 #aboutButton {
     display: inline-block;
@@ -145,6 +135,7 @@ h3 {
 .allcards {
     display: flex;
     flex-direction: column;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0; 
   }
@@ -221,4 +212,3 @@ h3 {
   }
   
 
-  

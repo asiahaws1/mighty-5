@@ -383,8 +383,9 @@ header h1 a:hover {
   justify-content: space-between;
   padding: 16px;
   width: 100%;
-  position: relative;
-  z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -493,27 +494,12 @@ main h2 {
   display: block;
   width: calc(100% - 16px);
 }
-main h2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: black;
-}
 main h3 {
   font-weight: 700;
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
   text-align: center;
-}
-main h3::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: black;
-  margin-top: 5px;
 }
 main #aboutButton {
   display: block;
@@ -534,14 +520,6 @@ main #missionEstatement {
   display: block;
   margin-left: 16px;
 }
-main #missionEstatement::after {
-  content: "";
-  display: block;
-  width: 265px;
-  height: 3px;
-  background-color: black;
-  margin: 8px 0 0;
-}
 main #contributors {
   text-align: left;
   font-size: 32px;
@@ -550,14 +528,6 @@ main #contributors {
   position: relative;
   display: block;
   margin-left: 16px;
-}
-main #contributors::after {
-  content: "";
-  display: block;
-  width: 175px;
-  height: 3px;
-  background-color: black;
-  margin: 8px 0 0;
 }
 main #logosContributors {
   display: flex;
@@ -570,8 +540,7 @@ main #logosContributors {
 }
 
 .swiper {
-  width: 100%;
-  height: 250px;
+  position: relative;
 }
 
 @media (max-width: 400px) {
@@ -598,6 +567,20 @@ main #logosContributors {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.swiper-pagination {
+  display: inline-flex !important;
+  gap: 12px !important;
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  padding: 8px 12px !important;
+  border-radius: 12px !important;
+  width: auto !important;
+  justify-content: center !important;
 }
 
 #footerWrapper {
@@ -635,11 +618,6 @@ main #logosContributors {
   margin-top: 0;
   padding-top: 0;
   margin-left: 16px;
-}
-
-*::after {
-  display: none !important;
-  content: none !important;
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 768px) and (max-width: 1024px) {
@@ -762,10 +740,6 @@ main #logosContributors {
     max-width: 1240px;
     margin: auto;
   }
-  *::after {
-    display: none !important;
-    content: none !important;
-  }
   #titleBar {
     background: #9F4540;
     display: flex;
@@ -785,6 +759,8 @@ main #logosContributors {
     justify-content: space-between;
     padding: 16px;
     width: 100%;
+    position: sticky;
+    top: 0;
   }
   nav button {
     display: none;
@@ -830,14 +806,6 @@ main #logosContributors {
     display: block;
     margin-left: 16px;
   }
-  #aboutTitle::after {
-    content: "";
-    display: block;
-    width: 250px;
-    height: 3px;
-    background-color: black;
-    margin: 8px 0 0;
-  }
   #aboutButton {
     display: inline-block;
     position: relative;
@@ -870,6 +838,7 @@ main #logosContributors {
   .allcards {
     display: flex;
     flex-direction: column;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0;
   }
