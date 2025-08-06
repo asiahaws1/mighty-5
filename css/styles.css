@@ -800,7 +800,7 @@ main #logosContributors {
     margin: 0;
   }
 }
-@media only screen and (min-width: 48rem) and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 48rem) and (min-width: 768px) and (max-width: 1260px) {
   .zion-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -879,9 +879,14 @@ main #logosContributors {
 }
 @media only screen and (min-width: 60rem) {
   nav,
-  main, footer {
+  footer {
     max-width: 1240px;
     margin: auto;
+  }
+  main {
+    width: 100%;
+    max-width: none;
+    padding-left: 16px;
   }
   #titleBar {
     background: #9F4540;
@@ -985,6 +990,12 @@ main #logosContributors {
     margin: 0 auto;
     padding: 0;
   }
+  .allcards {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
   .allcards section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -992,6 +1003,16 @@ main #logosContributors {
     padding: 0;
     background: none;
     border: none;
+  }
+  .allcards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 2rem;
+    background: none;
+    border: none;
+    max-width: 100%;
+    margin: 0 auto;
   }
   .allcards section img {
     width: 100%;
@@ -1084,25 +1105,6 @@ main #logosContributors {
     align-items: center;
     text-align: center;
     gap: 2rem;
-  }
-}
-@media only screen and (min-width: 60rem) and (min-width: 768px) {
-  .allcards section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  .allcards section img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .allcards section .card-text {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 16px;
   }
 }
