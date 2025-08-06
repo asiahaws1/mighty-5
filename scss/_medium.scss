@@ -173,13 +173,98 @@
     width: max-content; 
     margin: 0; 
 }
-  
-  
-  // Footer Section
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: $gutter;
-    margin: $gutter;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .zion-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0; 
+    align-items: start;
   }
+
+  .zion-card .card-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+  }
+
+  .zion-card .card-figure img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    flex-grow: 1;
+    padding-bottom: .5rem;
+    padding-right: 0;
+  }
+
+  .zion-card .card-figure figcaption {
+    font-size: 0.75rem;
+    color: #666;
+    padding: 0;
+    padding-top: 0;
+    text-align: left;
+    margin-top: 0;
+
+  }
+
+  .zion-card .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; // was space-between
+    gap: 0; // no extra gaps between children
+    padding: 0.75rem 1rem 0.75rem 0;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .zion-card .card-text h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
  
+  }
+
+  .zion-card .card-text p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+    padding-bottom: 0;
+    
+  }
+
+  .zion-card .extra-content {
+    margin: 0;
+    font-size: 0.9rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+
+  }
+
+  .zion-card .virtual-tour-btn {
+    margin-top: 0;
+  
+  }
+
+  .zion-card .button-group {
+    margin-top: 0;
+  }
+
+  .zion-card .card-figure {
+    height: auto;
+    aspect-ratio: 10 /9;
+    overflow: hidden;
+  }
+  
+  .zion-card .card-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding-top: 0;
+  }
+
+}
