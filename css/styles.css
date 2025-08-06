@@ -879,14 +879,14 @@ main #logosContributors {
 }
 @media only screen and (min-width: 60rem) {
   nav,
-  footer {
+  main, footer {
     max-width: 1240px;
     margin: auto;
   }
   main {
     width: 100%;
-    max-width: none;
-    padding-left: 16px;
+    margin: 0 auto;
+    max-width: clamp(1240px, 80%, 1600px);
   }
   #titleBar {
     background: #9F4540;
@@ -984,17 +984,10 @@ main #logosContributors {
     margin: 0;
   }
   .allcards {
-    display: flex;
-    flex-direction: column;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .allcards {
-    max-width: 100%;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: clamp(1240px, 80%, 2000px);
   }
   .allcards section {
     display: grid;
@@ -1003,16 +996,6 @@ main #logosContributors {
     padding: 0;
     background: none;
     border: none;
-  }
-  .allcards section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 0 2rem;
-    background: none;
-    border: none;
-    max-width: 100%;
-    margin: 0 auto;
   }
   .allcards section img {
     width: 100%;

@@ -1,21 +1,18 @@
-// nav,
-// main, footer {
-//    max-width: 1240px;
-//    margin: auto;
-// }
+ nav,
+ main, footer {
+   max-width: 1240px;
+    margin: auto;
+ }
 
-
-nav,
-footer {
-  max-width: 1240px;
-  margin: auto;
-}
-
-main {
+ main {
   width: 100%;
-  max-width: none;
-  padding-left: $gutter;
+  margin: 0 auto;
+
+  // Responsive max-width that grows between 1240px and 1600px
+  max-width: clamp(1240px, 80%, 1600px);
 }
+
+
 
 
 
@@ -168,19 +165,14 @@ h3 {
 
 
 .allcards {
-   display: flex;
-   flex-direction: column;
-   max-width: 1240px;
-   margin: 0 auto;
-   padding: 0;
- }
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: clamp(1240px, 80%, 2000px);
+}
 
- .allcards {
-   max-width: 100%;
-   width: 100%;
-   margin: 0 auto;
-   padding: 0 2rem;
- }
+
+
  
   .allcards section {
    display: grid;
@@ -191,16 +183,7 @@ h3 {
    border: none;
  }
 
- .allcards section {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   align-items: center;
-   padding: 0 2rem;
-   background: none;
-   border: none;
-   max-width: 100%;
-   margin: 0 auto;
- }
+ 
  
   .allcards section img {
    width: 100%;
